@@ -1,0 +1,16 @@
+.productBody{
+    width: 100%;
+    height: 60%;
+    background-color:#EAE8F7;
+}
+
+
+.productBody .ProductContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.ProductContainer h1{
+    font-size: 4rem;
+}
