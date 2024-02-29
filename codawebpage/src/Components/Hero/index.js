@@ -1,5 +1,6 @@
 import React from "react";
 import "./hero.css";
+import { SearchBar } from "../Searchbar";
 
 const Hero = () => {
   return (
@@ -16,7 +17,7 @@ const Hero = () => {
       </svg>
       <div className="HeroBody">
         <h1>Welcome to CodaShop Support</h1>
-        <input placeholder="Search..." />
+        
       </div>
       <svg className="wave2" viewBox="0 0 1920 100" width="100%">
         <path

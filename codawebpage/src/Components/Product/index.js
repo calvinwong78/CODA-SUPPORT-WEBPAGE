@@ -1,11 +1,42 @@
 import React from "react";
 import "./product.css";
-import { motion } from "framer-motion";
+import Dropdown from "./../Dropdown";
+
 
 const Product = () => {
+  const handleOptionSelect = (path) => {
+    window.location.href = path; 
+  };
+
+  const optionsCS = [
+    { label: 'Codashop', path: 'https://sg.support.codashop.com/hc/en-us/sections/9012326683407-Codashop' },
+    { label: 'Coda Rewards', path: '/page2' },
+  ];
+  const optionsPP = [
+    { label: 'I Have Made a Transaction, but How to Find the Voucher Code?', path: '/page1' },
+    { label: 'How Can I Get a History of My Transactions?', path: '/page2' },
+    { label: 'I Got an Error Code When Making a Purchase', path: '/page2' },
+  ];
+  const optionsTuto = [
+    { label: 'Voucher or code redemption tutorial', path: '/page1' },
+    { label: 'Payment tutorial', path: '/page2' },
+  ];
+  const optionsServ = [
+    { label: 'Exciting News for MLBB Players!', path: '/page1' },
+    { label: 'League of Legends Account Migration', path: '/page2' },
+    { label: 'News and Promos of Codashop', path: '/page2' },
+    { label: 'Beware of the Phishing Website Impersonating Codashop!', path: '/page2' },
+
+  ];
+
+  const showMoreUrlCS = 'https://sg.support.codashop.com/hc/en-us/sections/9012278065679-All-About-Codashop'; 
+  const showMoreUrlPP = 'https://sg.support.codashop.com/hc/en-us/sections/360000434536-Payment-and-Purchase-Issues';
+  const showMoreUrlTuto = 'https://sg.support.codashop.com/hc/en-us/sections/360000446355-Tutorials';
+  const showMoreUrlServ = 'https://sg.support.codashop.com/hc/en-us/sections/360000434556-Service-Announcements';
+
   return (
     <div className="productBody">
-      <svg viewBox="0 0 1920 100" width="100%">
+      <svg viewBox="0 0 1920 100" width="100%" className="productWaveTop">
         <path
           d="M0 35L101 64L202 90L303 78L404 18L505 81L606 59L707 89L808 95L909 34L1011 73L1112 85L1213 26L1314 39L1415 45L1516 89L1617 82L1718 80L1819 39L1920 93L1920 0L1819 0L1718 0L1617 0L1516 0L1415 0L1314 0L1213 0L1112 0L1011 0L909 0L808 0L707 0L606 0L505 0L404 0L303 0L202 0L101 0L0 0Z"
           fill="#eae8f7"
@@ -23,17 +54,7 @@ const Product = () => {
               <h2>All About Codashop</h2>
             </div>
             <div className="itemBody">
-              <ul>
-                <li>
-                  <a href="/">Codashop</a>
-                </li>
-                <li>
-                  <a href="/">Coda Rewards</a>
-                </li>
-              </ul>
-              <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
-                <button className="buttonProduct">See more </button>
-              </motion.div>
+              <Dropdown options={optionsCS} onSelect={handleOptionSelect} showMoreUrl={showMoreUrlCS} />
             </div>
           </div>
           <div className="productItem">
@@ -41,17 +62,7 @@ const Product = () => {
               <h2>Payment and Purchase Issues</h2>
             </div>
             <div className="itemBody">
-              <ul>
-                <li>
-                  <a href="/">I Have Made a Transaction, but How to Find the Voucher Code?</a>
-                </li>
-                <li>
-                  <a href="/">How Can I Get a History of My Transactions?</a>
-                </li>
-              </ul>
-              <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
-                <button className="buttonProduct">See more </button>
-              </motion.div>
+              <Dropdown options={optionsPP} onSelect={handleOptionSelect} showMoreUrl={showMoreUrlPP} />
             </div>
           </div>
           <div className="productItem">
@@ -59,17 +70,7 @@ const Product = () => {
               <h2>Tutorials</h2>
             </div>
             <div className="itemBody">
-              <ul>
-                <li>
-                  <a href="/">Voucher or code redemption tutorial</a>
-                </li>
-                <li>
-                  <a href="/">Payment tutorial</a>
-                </li>
-              </ul>
-              <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
-                <button className="buttonProduct">See more </button>
-              </motion.div>
+              <Dropdown options={optionsTuto} onSelect={handleOptionSelect} showMoreUrl={showMoreUrlTuto} />
             </div>
           </div>
           <div className="productItem">
@@ -77,17 +78,7 @@ const Product = () => {
               <h2>Service Announcements</h2>
             </div>
             <div className="itemBody">
-              <ul>
-                <li>
-                  <a href="/">Exciting News for MLBB Players!</a>
-                </li>
-                <li>
-                  <a href="/">News and Promos of Codashop</a>
-                </li>
-              </ul>
-              <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
-                <button className="buttonProduct">See more </button>
-              </motion.div>
+              <Dropdown options={optionsServ} onSelect={handleOptionSelect} showMoreUrl={showMoreUrlServ} />
             </div>
           </div>
         </div>

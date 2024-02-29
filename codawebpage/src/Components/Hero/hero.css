@@ -42,9 +42,11 @@
 .Hero .wave1{
     position: absolute;
     top: 0;
+    left: 0;
 }
 
 .Hero .wave2{
     position: absolute;
     bottom: 0;
+    left: 0;
 }

@@ -23,7 +23,7 @@ const ContactUs = () => {
           <div class="animate__animated animate__bounce animate__delay-1s">
             <div className="item">
               <a href="https://sg.support.codashop.com/hc/en-us/requests/new">
-                <MdMessage size="6rem" color="#E8F953" />
+                <MdMessage className="iconContactus" color="#E8F953" />
               </a>
               <div className="itemBody">
                 <p>
@@ -46,7 +46,7 @@ const ContactUs = () => {
           <div class="animate__animated animate__bounce animate__delay-2s">
             <div className="item">
               <a href="https://m.me/Codashop.SG">
-                <FaFacebookMessenger size="6rem" color="#E8F953" />
+                <FaFacebookMessenger className="iconContactus" color="#E8F953" />
               </a>
               <div className="itemBody">
                 <p>Send us a <span className="TextHighlight"><a href="https://m.me/Codashop.SG">direct message</a></span>  via Facebook</p>
@@ -61,7 +61,7 @@ const ContactUs = () => {
         >
           <div class="animate__animated animate__bounce animate__delay-3s">
             <div className="item">
-              <FaRobot size="6rem" cursor="pointer" color="#E8F953" />
+              <FaRobot className="iconContactus" cursor="pointer" color="#E8F953" />
               <div className="itemBody">
                 <p>Chat with our <span className="TextHighlight"><a href="/">virtual assistant</a></span> </p>
               </div>
