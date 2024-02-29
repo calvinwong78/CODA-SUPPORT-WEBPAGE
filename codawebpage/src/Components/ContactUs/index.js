@@ -17,7 +17,7 @@ const ContactUs = () => {
       <div className="COntainerBody">
         <motion.div
           className="box"
-          whileHover={{ scale: [null, 1.5, 1.4] }}
+          whileHover={{ scale: [null, 1.2, 1.1] }}
           transition={{ duration: 0.3 }}
         >
           <div class="animate__animated animate__bounce animate__delay-1s">
@@ -40,7 +40,7 @@ const ContactUs = () => {
         </motion.div>
         <motion.div
           className="box"
-          whileHover={{ scale: [null, 1.5, 1.4] }}
+          whileHover={{ scale: [null, 1.2, 1.1] }}
           transition={{ duration: 0.3 }}
         >
           <div class="animate__animated animate__bounce animate__delay-2s">
@@ -56,14 +56,14 @@ const ContactUs = () => {
         </motion.div>
         <motion.div
           className="box"
-          whileHover={{ scale: [null, 1.5, 1.4] }}
+          whileHover={{ scale: [null, 1.2, 1.1] }}
           transition={{ duration: 0.3 }}
         >
           <div class="animate__animated animate__bounce animate__delay-3s">
             <div className="item">
               <FaRobot size="6rem" cursor="pointer" color="#E8F953" />
               <div className="itemBody">
-                <p>Chat with our <span className="TextHighlight">virtual assistant</span> </p>
+                <p>Chat with our <span className="TextHighlight"><a href="/">virtual assistant</a></span> </p>
               </div>
             </div>
           </div>

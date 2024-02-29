@@ -16,7 +16,7 @@ const Hero = () => {
       </svg>
       <div className="HeroBody">
         <h1>Welcome to CodaShop Support</h1>
-        <h1>search bar</h1>
+        <input placeholder="Search..." />
       </div>
       <svg className="wave2" viewBox="0 0 1920 100" width="100%">
         <path

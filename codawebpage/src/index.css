@@ -19,3 +19,21 @@ code {
   padding: 0;
   box-sizing: border-box;
 }
+
+
+::-webkit-scrollbar {
+  width: 11px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E8F953;
+  transition: ease-in-out .3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF7F98;
+}

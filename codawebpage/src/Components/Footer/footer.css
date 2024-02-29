@@ -1,4 +1,94 @@
 .FooterMain{
     background-color: #6142FB;
-    height: 35%;
+    height: 55%;
+    padding: 0 6rem;
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.FooterMain .FooterHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding-bottom: 1.5rem;
+}
+
+.FooterHeader .topleft h1{
+    color: #E8F953;
+}
+
+.FooterHeader .topright {
+    width: 6%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topright .Footerlogo{
+    color: #EAE8F7;
+    transition: ease-in .2s;
+}
+
+.topright .Footerlogo:hover{
+    color: #E8F953;
+}
+
+.FooterMain .FooterBody{
+    color: #EAE8F7;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.FooterBody .bodyContainer{
+    padding-right: 9rem;
+}
+
+.FooterMain .FooterBody .bodyContainer .containerHeader h2{
+    font-weight: 500;
+}
+
+.FooterMain .FooterBody .bodyContainer .containerBody {
+    padding-top: 1rem;
+}
+
+.FooterMain .FooterBody .bodyContainer .containerBody ul{
+    list-style-type: none;
+    padding: 0;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.FooterMain .FooterBody .bodyContainer .containerBody a{
+   text-decoration: none;
+   color: inherit;
+}
+
+
+
+.FooterMain .FooterBottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #EAE8F7;
+    border-top: 1px solid gray;
+    padding-top: 1.5rem;
+}
+
+.FooterBottom .Bottomleft{
+    display: flex;
+    flex-direction: row;
+}
+
+.FooterBottom .Bottomleft p{
+    padding-right: 1rem;
+    cursor: pointer;
+}
+
+.FooterBottom .Bottomleft a{
+   text-decoration: none;
+   color: inherit;
 }
