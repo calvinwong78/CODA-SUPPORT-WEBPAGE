@@ -31,7 +31,7 @@ code {
 
 ::-webkit-scrollbar-thumb {
   background: #E8F953;
-  transition: ease-in-out .3s;
+  border-radius: 20px;
 }
 
 ::-webkit-scrollbar-thumb:hover {

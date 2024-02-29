@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css";
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin,FaTiktok } from "react-icons/fa";
 import { SiGlassdoor } from "react-icons/si";
 import { motion } from "framer-motion";
 
@@ -12,6 +12,14 @@ const Footers = () => {
           <h1>CODASHOP SUPPORT</h1>
         </div>
         <div className="topright">
+        <motion.div
+            whileHover={{ scale: [null, 1.2, 1.1] }}
+            transition={{ duration: 0.3 }}
+          >
+            <a href="https://www.tiktok.com/@codashop_global?lang=en">
+              <FaTiktok className="Footerlogo" size="2rem" cursor="pointer" />
+            </a>
+          </motion.div>
           <motion.div
             whileHover={{ scale: [null, 1.2, 1.1] }}
             transition={{ duration: 0.3 }}
@@ -54,10 +62,10 @@ const Footers = () => {
           </div>
           <div className="containerBody">
             <ul>
-              <li><a href="https://www.codapayments.com/codashop">Codashop</a></li>
-              <li><a href="https://www.codapayments.com/codapay">Codapay</a></li>
-              <li><a href="https://www.codapayments.com/xshop">xShop</a></li>
-              <li><a href="https://www.codapayments.com/customcommerce">Custom Commerce</a></li>
+              <li><a href="https://www.codapayments.com/about">About Coda</a></li>
+              <li><a href="https://www.codapayments.com/culture">Culture</a></li>
+              <li><a href="https://www.codapayments.com/careers">Careers</a></li>
+              <li><a href="https://www.codapayments.com/press-center">Press Center</a></li>
             </ul>
           </div>
         </div>
@@ -67,10 +75,9 @@ const Footers = () => {
           </div>
           <div className="containerBody">
             <ul>
-              <li><a href="https://www.codapayments.com/codashop">Codashop</a></li>
-              <li><a href="https://www.codapayments.com/codapay">Codapay</a></li>
-              <li><a href="https://www.codapayments.com/xshop">xShop</a></li>
-              <li><a href="https://www.codapayments.com/customcommerce">Custom Commerce</a></li>
+              <li><a href="https://www.codapayments.com/market-guide">Market Guides</a></li>
+              <li><a href="https://coda-payments.gitbook.io/coda-public-technical-documentation/">Documentation</a></li>
+              <li><a href="https://www.codapayments.com/payment-channel-coverage">Payment Channel Coverage</a></li>
             </ul>
           </div>
         </div>

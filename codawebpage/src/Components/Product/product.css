@@ -1,16 +1,100 @@
 .productBody{
     width: 100%;
-    height: 60%;
+    height: 100%;
     background-color:#EAE8F7;
+    position: relative;
+}
+
+.productBody .BottomWaveProduct{
+    position: absolute;
+    bottom: 0;
 }
 
 
 .productBody .ProductContainer{
+    padding: 0 6rem;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 .ProductContainer h1{
-    font-size: 4rem;
+    letter-spacing: .4rem;
+    font-size: 3rem;
+    color: #280031;
+    text-shadow: 3px 3px 0px #6142FB;
+}
+
+.ProductContainer .productLayout{
+    padding-top: 1rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 3rem;
+    justify-items: center;
+}
+
+.ProductContainer .productLayout .productItem {
+    border: 2px solid #FF7F98; 
+    background-color:#FF7F98 ;
+    border-radius: 40px;
+    width: 30rem;
+    height: 12rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.productLayout .productItem .itemHeader h2{
+    color:  #E8F953;
+    text-shadow: 3px 3px 0 #280031;
+    letter-spacing: .25rem;
+    cursor: pointer;
+    width: fit-content;
+    transition: ease-in .2s;
+    margin-bottom: .5rem;
+}
+
+.productLayout .productItem .itemHeader h2:hover{
+    color:  #6142FB;
+    text-shadow: 3px 3px 0 white;
+}
+
+.productLayout .productItem .itemBody ul{
+    list-style-type: none;
+    width: 70%;
+}
+
+.productLayout .productItem .itemBody {
+    font-size: .8rem;
+    font-weight: 400;
+     
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+ .buttonProduct {
+    font-size: .7rem;
+    cursor: pointer;
+    width: 100%;
+    height: 3%;
+    background-color: #6142FB;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    margin-bottom: .2rem;
+    padding: .3rem;
+}
+
+.productLayout .productItem .itemBody li{
+    padding: .2rem 0;
+}
+
+.productLayout .productItem .itemBody a{
+    
+    color: inherit;
+    
 }
