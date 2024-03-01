@@ -1,6 +1,30 @@
 .ServciveeDetail{
+    padding: 3rem 6rem;
     height: 80vh;
     background-color: azure;
+    background-image: url(../../Asset/wave10.svg);
+    background-size: stretch;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.backFunction{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+.backFunction  a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.backFunction p {
+    margin-left: .7rem;
 }
 
 .ServciveeDetail .detailwrapper{
@@ -10,6 +34,7 @@
     align-items: center;
 }
 
+
 .ServciveeDetail h1 {
     color: #6142FB;
     text-shadow: 3px 0 0 #FF7F98;
@@ -18,4 +43,30 @@
     transition: ease-in .2s;
     margin-bottom: 0.5rem;
     text-align: center;
+}
+
+.ServciveeDetail li{
+    padding: .2rem 0;
+}
+
+.ServciveeDetail li a{
+    color: #6142FB;
+    transition: ease-in .2s;
+}
+
+.ServciveeDetail li a:hover{
+    text-decoration: underline;
+    color: #FF7F98;
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+    .ServciveeDetail{
+        padding: 3rem 4rem;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+    .ServciveeDetail{
+        padding: 3rem 4rem;
+    }
 }

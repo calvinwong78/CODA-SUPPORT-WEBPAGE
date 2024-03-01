@@ -9,7 +9,7 @@ const Product = () => {
   };
 
   const optionsCS = [
-    { label: 'Codashop', path: 'https://sg.support.codashop.com/hc/en-us/sections/9012326683407-Codashop' },
+    { label: 'Codashop', path: '/detail' },
     { label: 'Coda Rewards', path: '/detail' },
   ];
   const optionsPP = [
@@ -29,10 +29,10 @@ const Product = () => {
 
   ];
 
-  const showMoreUrlCS = 'https://sg.support.codashop.com/hc/en-us/sections/9012278065679-All-About-Codashop'; 
-  const showMoreUrlPP = 'https://sg.support.codashop.com/hc/en-us/sections/360000434536-Payment-and-Purchase-Issues';
-  const showMoreUrlTuto = 'https://sg.support.codashop.com/hc/en-us/sections/360000446355-Tutorials';
-  const showMoreUrlServ = 'https://sg.support.codashop.com/hc/en-us/sections/360000434556-Service-Announcements';
+  const showMoreUrlCS = '/detail'; 
+  const showMoreUrlPP = '/detail';
+  const showMoreUrlTuto = '/detail';
+  const showMoreUrlServ = '/detail';
 
   return (
     <div className="productBody">
