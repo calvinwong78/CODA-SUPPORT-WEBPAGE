@@ -1,0 +1,21 @@
+.ServciveeDetail{
+    height: 80vh;
+    background-color: azure;
+}
+
+.ServciveeDetail .detailwrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ServciveeDetail h1 {
+    color: #6142FB;
+    text-shadow: 3px 0 0 #FF7F98;
+    letter-spacing: .25rem;
+    width: fit-content;
+    transition: ease-in .2s;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}

@@ -1,6 +1,5 @@
 import React from "react";
 import "./hero.css";
-import { SearchBar } from "../Searchbar";
 
 const Hero = () => {
   return (

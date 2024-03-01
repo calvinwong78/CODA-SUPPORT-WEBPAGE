@@ -10,22 +10,22 @@ const Product = () => {
 
   const optionsCS = [
     { label: 'Codashop', path: 'https://sg.support.codashop.com/hc/en-us/sections/9012326683407-Codashop' },
-    { label: 'Coda Rewards', path: '/page2' },
+    { label: 'Coda Rewards', path: '/detail' },
   ];
   const optionsPP = [
-    { label: 'I Have Made a Transaction, but How to Find the Voucher Code?', path: '/page1' },
-    { label: 'How Can I Get a History of My Transactions?', path: '/page2' },
-    { label: 'I Got an Error Code When Making a Purchase', path: '/page2' },
+    { label: 'I Have Made a Transaction, but How to Find the Voucher Code?', path: '/detail' },
+    { label: 'How Can I Get a History of My Transactions?', path: '/detail' },
+    { label: 'I Got an Error Code When Making a Purchase', path: '/detail' },
   ];
   const optionsTuto = [
-    { label: 'Voucher or code redemption tutorial', path: '/page1' },
-    { label: 'Payment tutorial', path: '/page2' },
+    { label: 'Voucher or code redemption tutorial', path: '/detail' },
+    { label: 'Payment tutorial', path: '/detail' },
   ];
   const optionsServ = [
-    { label: 'Exciting News for MLBB Players!', path: '/page1' },
-    { label: 'League of Legends Account Migration', path: '/page2' },
-    { label: 'News and Promos of Codashop', path: '/page2' },
-    { label: 'Beware of the Phishing Website Impersonating Codashop!', path: '/page2' },
+    { label: 'Exciting News for MLBB Players!', path: '/detail' },
+    { label: 'League of Legends Account Migration', path: '/detail' },
+    { label: 'News and Promos of Codashop', path: '/detail' },
+    { label: 'Beware of the Phishing Website Impersonating Codashop!', path: '/detail' },
 
   ];
 

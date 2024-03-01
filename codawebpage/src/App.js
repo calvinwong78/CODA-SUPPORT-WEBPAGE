@@ -1,19 +1,20 @@
 import "./App.css";
 import "animate.css";
-import ContactUs from "./Components/ContactUs";
-import Hero from "./Components/Hero";
-import Navbar from "./Components/Navbar/Index";
-import Product from "./Components/Product";
-import Footers from "./Components/Footer";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import DetailPage from "./Components/Detailpage";
+import PageMan from "./Pagemanager";
+
 
 function App() {
   return (
-    <div className="App" >
-      <Navbar />
-      <Hero />
-      <ContactUs />
-      <Product />
-      <Footers />
+    <div className="App">
+      <Router>
+        <Routes>
+          <Route path="/" element={<PageMan/>} />
+          <Route path="/detail" element={<DetailPage/>} />
+        </Routes>
+      </Router>
     </div>
   );
 }
